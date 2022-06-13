@@ -1,0 +1,70 @@
+* {
+    font-family: sans-serif
+}
+
+body {
+    margin: 10px;
+    background-color: #E9F1FE;
+}
+
+
+.reg_access_message {
+    width: 1120px;
+    height: 525px;
+    margin: 125px auto;
+    background-color: #C3CFE2;
+    border-radius: 16px;
+}
+
+.reg_access_message__image {
+    width: 90px;
+    margin: 0 auto;
+    padding-top: 125px;
+}
+
+.reg_access_message img {
+    width: 90px;
+}
+
+.reg_access_message__title {
+    height: 40px;
+    padding-top: 25px;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0;
+}
+
+.reg_access_message__subtitle{
+    height: 25px;
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.button__to-login {
+    width: 200px;
+    height: 40px;
+    margin: 100px auto;
+}
+
+.button__to-login a input {
+    width: 200px;
+    height: 40px;
+    border-radius: 16px;
+    outline: none;
+    border: 0;
+    color: white;
+}
+
+.button__to-login a input {
+    background-color: #689BEB;
+}
+
+.button__to-login a input:hover {
+    background-color: #3f619384;
+}

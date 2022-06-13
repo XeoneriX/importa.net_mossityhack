@@ -1,0 +1,101 @@
+* {
+    font-family: sans-serif
+}
+
+body {
+    margin: 10px;
+    background-color: #E9F1FE;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.reg_form {
+    width: 1120px;
+    height: 525px;
+    margin: 125px auto;
+    background-color: #C3CFE2;
+    border-radius: 16px;
+}
+
+.reg_form__title {
+    padding-top: 50px;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0;
+}
+
+.reg_form__type{
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+form {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.reg_form_fields__element input {
+    color: black;
+    width: 430px;
+    height: 50px;
+    background-color: #E9F1FE;
+    border-radius: 16px;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+    font-weight: normal;
+    padding: 0 10px 0 10px;
+}
+
+.reg_form_fields__element p {
+    color: white;
+    font-size: 22px;
+    height: 25px;
+    margin: 0 0 15px 0;
+}
+
+.reg_form_fields_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+    height: 40px;
+    margin: 25px auto;
+}
+
+.button__sumbit input, .button__to-login button {
+    width: 200px;
+    height: 40px;
+    border-radius: 16px;
+    outline: none;
+    border: 0;
+    color: white;
+}
+
+.button__sumbit input {
+    background-color: #689BEB;
+}
+
+.button__to-login button {
+    background-color: #3F6093;
+}
+
+.button__sumbit:hover input, .button__to-login button:hover {
+    background-color: #3f619384;
+}
