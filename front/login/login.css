@@ -1,0 +1,100 @@
+* {
+    font-family: sans-serif
+}
+
+
+
+body {
+    margin: 10px;
+    background-color: #E9F1FE;
+}
+
+.login_form {
+    width: 650px;
+    height: 455px;
+    margin: 125px auto;
+    background-color: #C3CFE2;
+    border-radius: 16px;
+}
+
+.login_form__title {
+    padding-top: 50px;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0;
+}
+
+.login_form__type{
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.login_form_fields__login input, .login_form_fields__password input {
+    color: black;
+    width: 430px;
+    height: 50px;
+    background-color: #E9F1FE;
+    border-radius: 16px;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+    font-weight: normal;
+    padding: 0 10px 0 10px;
+}
+.login_form_fields_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+    height: 40px;
+}
+
+.login_form__reset-password {
+    width: 450px;
+    height: 25px;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.login_form__reset-password a {
+    color: #3F6093;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+.button__sumbit input, .button__to-registration button {
+    width: 200px;
+    height: 40px;
+    border-radius: 16px;
+    outline: none;
+    border: 0;
+    color: white;
+}
+
+.button__sumbit input {
+    background-color: #689BEB;
+}
+
+.button__to-registration button {
+    background-color: #3F6093;
+}
+
+.button__sumbit:hover input, .button__to-registration button:hover {
+    background-color: #3f619384;
+}

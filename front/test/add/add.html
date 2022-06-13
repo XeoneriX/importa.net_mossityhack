@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <script src="add.js"></script>
+    <title>RegIm</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation_logo">
+            <a href="/home">
+                <p>RegIm</p>
+            </a>
+        </div>
+        <div class="navigation_lk">
+            <div class="dropdown">
+                <p>Личный кабинет</p>
+                <div class="dropdown-content">
+                    <a href="/login/login.html">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_title">
+            <p>Компания «МЕДПЛАНТ»</p>
+        </div>
+        <div class="main_buttons">
+            <button onclick="window.location.href='/manufactor/manufactor.html'" class="main_btn list">Мои товары</button>
+            <button onclick="window.location.href='/requests.html'" class="main_btn requests">Товары на рассмотрении</button>
+            <button onclick="window.location.href='/add/add.html'" class="main_btn add active">+ Добавить товар</button>
+        </div>
+        <div class="add_form">
+            <div class="add_form__title">
+                <p>Добавление товара</p>
+                <div class="title_buttons">
+                    <button id="default_btn" class="add_type_bnt" onclick="showDefault()" >Вручную</button>
+                    <button id="auto_btn" class="add_type_bnt" onclick="showAuto()" >Автоматически</button>
+                    <button id="parser_btn" class="add_type_bnt active" onclick="showParser()" >Парсер</button>
+                </div>
+            </div>
+            <div id="default_add" class="add_form_toggle" style="visibility: hidden;">
+                <form name="default_form" action="http://localhost:3000/login" method="post">
+                    <div class="add_form_toggle__element">
+                        <p>Название товара</p>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="add_form_toggle__element">
+                        <p>Категория</p>
+                        <input type="text" name="category" list="category" required>
+                        <datalist id="category">
+                            <option>Автозапчасти</option>
+                            <option>Стоматологические изделия</option>
+                            <option>Лекарственные средства</option>
+                            <option>Бананы</option>
+                            <option>Термобумага для чековых лент</option>
+                            <option>Корма для домашних животных</option>
+                        </datalist>
+                    </div>
+                    <div class="add_form_toggle__element file_input__element">
+                        <p>Изображение</p>
+                        <input class="file_input" type="file" name="image" accept=".jpg,.jpeg,.png,.bmp" required>
+                    </div>
+                    <div class="add_form_toggle__element">
+                        <p>Другие данные</p>
+                        <textarea rows="10" cols="65" name="text" required></textarea>
+                    </div>
+                    <div class="button__sumbit">
+                        <input type="button" value="Отправить">
+                    </div>
+                </form>
+                <div class="add_form_toggle__tutor">
+                    <p class="tutor_title">Инструкция</p>
+                    <p class="tutor_desc">Для ускорения обработки заявки на добавление товара в поле “Другие данные” используйте специальный синтаксис.</p>
+                    <p class="tutor_sign">С уважением, Администрация</p>
+                </div>
+            </div>
+            <div id="auto_add" class="add_form_toggle" style="visibility: hidden;">
+                <form name="auto_form" action="http://localhost:3000/login" method="post">
+                    <div class="add_form_toggle__element file_input__element">
+                        <p>Файл xlsx, csv, yml</p>
+                        <input class="file_input" type="file" name="file" accept=".xls,.xlsx,.csv,.yml" required>
+                    </div>
+                    <div class="button__sumbit">
+                        <input type="submit" value="Отправить">
+                    </div>
+                </form>
+                <div class="add_form_toggle__tutor">
+                    <p class="tutor_title">Инструкция</p>
+                    <p class="tutor_desc">В стадии разработки.</p>
+                </div>
+            </div>
+            <div id="parser_add" class="add_form_toggle">
+                
+                <form name="parser_form" action="http://localhost:3000/login" method="post">
+                    <div class="main_list">
+                        <p class="main_list_cat_element">КОФЕ ПЛАНТАЦИОННЫЙ</p>
+                        <div class="main_list__element">
+                            <div class="img_space">
+                                <img src="/static/cofe.PNG" alt="">
+                            </div>
+                            <div class="desc">
+                                <p>УГАНДА RWENZORI MOUNTAINS<br>КОМПАНИЯ MADEO<br>500 г стоит 1214 ₽</p>
+                            </div>
+                        </div>
+                        <div class="main_list__element">
+                            <div class="img_space">
+                                <img src="/static/cofe.PNG" alt="">
+                            </div>
+                            <div class="desc">
+                                <p>УГАНДА RWENZORI MOUNTAINS<br>КОМПАНИЯ MADEO<br>500 г стоит 1214 ₽</p>
+                            </div>
+                        </div>
+                        <p class="main_list_cat_element">ЧАЙ</p>
+                        <div class="main_list__element">
+                            <div class="img_space">
+                                <img src="/static/tea1.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <p>ЧАЙ АССАМ ЧЁРНЫЙ<br>КОМПАНИЯ MADEO<br>100 г стоит 180 ₽</p>
+                            </div>
+                        </div>
+                        <div class="main_list__element">
+                            <div class="img_space">
+                                <img src="/static/tea2.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <p>ЧАЙ ГОДЖИ АСАИ ЗЕЛЁНЫЙ<br>КОМПАНИЯ MADEO<br>100 г стоит 174 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <pre></pre>
+
+                    <div class="comment">
+                        <p>Комментарий по результатам парсинга</p>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="button__sumbit">
+                        <input type="button" value="Отправить">
+                    </div>
+                    <div onclick="window.location.href='/add/add.html'" class="button__sumbit">
+                        <input type="button" value="Вернуться">
+                    </div>
+                </form>
+                <div class="add_form_toggle__tutor">
+                    <p class="tutor_title">Инструкция</p>
+                    <p class="tutor_desc">Для правильной работы парсера указывайте точный текст названия категорий и товаров</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>Registration RegIm</title>
+</head>
+<body>
+    <div class="reg_form">
+        <h1 class="reg_form__title">
+            Реестр<br />импортозамещения
+        </h1>
+        <h2 class="reg_form__type">
+            Регистрация
+        </h2>
+        <form action="http://localhost:3000/registration" name="registration" method="post">
+            <div class="reg_form_fields">
+                <div class="row">
+                    <div class="reg_form_fields__element">
+                        <p>Название компании</p>
+                        <input type="text" name="name" placeholder="ИП Иванов" required>
+                    </div>
+                    <div class="reg_form_fields__element">
+                        <p>E-Mail</p>
+                        <input type="text" name="email" placeholder="blabla@yandex.ru" pattern=".+@.+\..+" required oninvalid="this.setCustomValidity('Пример: moscow@city.hack')">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="reg_form_fields__element">
+                        <p>ИНН</p>
+                        <input type="number" name="inn" placeholder="1234567890" required>
+                    </div>
+                    <div class="reg_form_fields__element">
+                        <p>Сайт</p>
+                        <input type="text" name="site" placeholder="..." required>
+                    </div>
+                </div>
+                
+                <div class="reg_form_fields_buttons">
+                    <div class="button__sumbit">
+                        <input type="submit" value="Регистрация">
+                    </div>
+                    <div class="button__to-login">
+                        <button onclick="window.location.href='/login.html'">Вход</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

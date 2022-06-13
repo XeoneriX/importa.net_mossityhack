@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reporting.css">
+    <script src="reporting.js"></script>
+    <title>RegIm</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation_logo">
+            <a href="/home">
+                <p>RegIm</p>
+            </a>
+        </div>
+        <div class="navigation_lk">
+            <div class="dropdown">
+                <p>Личный кабинет</p>
+                <div class="dropdown-content">
+                    <a href="/login/login.html">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_title">
+            <p>Реестр импортозамещения</p>
+        </div>
+        <div class="main_buttons">
+            <button onclick="window.location.href='/worker/search/search.html'" class="main_btn list">Поиск</button>
+            <button onclick="window.location.href='/worker/reporting/reporting.html'" class="main_btn active">Отчётность</button>
+        </div>
+        <div class="main_search">
+            <div class="search">
+                <input id="search_input" type="text" placeholder="Поиск по категориям...">
+                <button onclick="search()">Поиск</button>
+            </div>
+            
+            <div class="table">
+                <div id="download_btn" style="visibility: hidden;">
+                    <select name="" id="">
+                        <option>csv</option>
+                        <option>yml</option>
+                        <option>xlsx</option>
+                    </select>
+                    <button onclick="downloadData()">Скачать</button>
+                </div>
+                <table>
+                    <thead id="cat_head" style="visibility: hidden;">
+                        <tr>
+                            <th width="80px" >Номер</th>
+                            <th width="915px" >Категория</th>
+                            <th width="100px">Количество компаний</th>
+                        </tr>
+                    </thead>
+                    <tbody id="categories_list">
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

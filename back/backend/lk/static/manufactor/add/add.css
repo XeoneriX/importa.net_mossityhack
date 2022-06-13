@@ -1,0 +1,279 @@
+* {
+    font-family: sans-serif
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E9F1FE;
+}
+
+.navigation {
+    width: calc(100% - 20px);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    background-image: linear-gradient(to bottom, rgba(195, 207, 226) 0%, rgba(195, 207, 226) 100%), linear-gradient(to bottom, rgba(63, 96, 147) 0%, rgba(63, 96, 147) 100%);
+    background-clip: content-box, padding-box;
+}
+
+.navigation p {
+    margin: auto;
+    height: 25px;
+    font-size: 22px;
+    color: #3F6093;
+}
+
+.navigation a {
+    text-decoration: none;
+    height: 25px;
+    font-size: 22px;
+    color: #3F6093;
+    margin-top: 7.5px;
+}
+
+.navigation_logo, .navigation_lk {
+    display: flex;
+}
+
+.navigation_logo a {
+    margin-left: 15px;
+}
+
+.navigation_lk p {
+    margin-top: 7.5px;
+    padding-left: 10px;
+}
+
+.dropdown {
+    width: 200px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+
+    width: 190px;
+    overflow: auto;
+    height: 32.5px;
+    background-color: #C3CFE2;
+}
+
+.dropdown-content {
+    padding-left: 10px;
+    padding-top: 7.5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main {
+    margin: 75px auto;
+    width: 1120px;
+}
+
+.main_title {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.main_title p {
+    font-size: 32px;
+    color: #3F6093;
+    height: 30px;
+    padding-top: 15px;
+}
+
+.main_btn {
+    height: 60px;
+    padding: 0 30px 0 30px;
+    border: 0;
+    background-color: #C3CFE2;
+    border-radius: 5px;
+    color: #3F6093;
+    font-size: 22px;
+    margin: 0 20px 0 0;
+}
+
+.add {
+    border-radius: 16px;
+    background-color: #689BEB;
+    color: white;
+}
+
+.add_type_bnt {
+    background-color: #E9F1FE;
+}
+
+.active {
+    background-color: #3F6093;
+    color: white;
+}
+
+.add_form {
+    margin-top: 40px;
+    width: 1100px;
+    height: 750px;
+    background-color: #C3CFE2;
+    border-radius: 16px;
+}
+
+.add_form__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 15px 0 15px;
+}
+
+.add_form__title p {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    width: 300px;
+    height: 40px;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 400px;
+}
+
+.title_buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.title_buttons button {
+    height: 40px;
+    border: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+#default_btn {
+    border-radius: 5px 0 0 5px;
+}
+
+#parser_btn {
+    border-radius: 0 5px 5px 0;
+}
+
+.add_form_toggle__element {
+    width: 450px;
+}
+
+
+
+.add_form_toggle__element input {
+    color: black;
+    width: 430px;
+    height: 50px;
+    background-color: #E9F1FE;
+    border-radius: 16px;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+    font-weight: normal;
+    padding: 0 10px 0 10px;
+}
+
+.add_form_toggle form {
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 450px;
+}
+
+.add_form_toggle__element p {
+    color: white;
+    font-size: 22px;
+    height: 25px;
+    margin: 0 0 15px 0;
+}
+
+.file_input {
+    padding: 20px 0 0 50px !important;
+    width: 400px !important;
+}
+
+.file_input__element {
+    width: 360px;
+}
+
+.add_form_toggle__element textarea {
+    resize: none;
+    background-color: #E9F1FE;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    width: 430px;
+    padding: 10px;
+}
+
+.add_form_toggle__element textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.button__sumbit input {
+    width: 450px;
+    height: 40px;
+    border-radius: 16px;
+    outline: none;
+    border: 0;
+    color: white;
+    background-color: #689BEB;
+    margin-top: 15px;
+}
+
+.add_form_toggle {
+    display: flex;
+    flex-direction: row;
+}
+
+.add_form_toggle__tutor {
+    width: 450px;
+    height: 600px;
+    border: 3px solid #3F6093;
+    margin-top: 30px;
+    margin-left: 70px;
+    border-radius: 16px;
+}
+
+.tutor_title {
+    font-size: 22px;
+    height: 25px;
+}
+
+.tutor_desc {
+    font-size: 20px;
+    height: 450px;
+}
+
+.tutor_title, .tutor_desc, .tutor_sign  {
+    
+    text-align: center;
+    color: #3F6093;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tutor_sign {
+    font-size: 18px;
+    text-align: right !important;
+    margin-top: 50px;
+    width: 430px;
+}
+
+#auto_add {
+    position: absolute;
+    top: 365px;
+}
+
+#parser_add {
+    position: absolute;
+    top: 365px;
+}

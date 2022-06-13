@@ -1,0 +1,168 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "file": "Laba4.xlsx",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "sdawdadsawdsawd",
+    "email": "dcxzsaw@dfsdafwac.resara",
+    "inn": "21312415215",
+    "site": "sdawdadsa"
+  },
+  "registration": {
+    "name": "dawdasda",
+    "email": "dssad@!wadwadad.ewradaw",
+    "inn": "123124124",
+    "site": "dsadwwadsa"
+  },
+  "login": {
+    "catalog_name": "dawda",
+    "category_name": "sadwad",
+    "item_name": "sadwadaw"
+  },
+  "categories": [
+    {
+      "Number": "01",
+      "CategoryName": "Растениеводство и животноводство, охота и предоставление соответствующих услуг в этих областях",
+      "Count": 1000,
+      "Subcategories": [
+        {
+          "Number": "01.1",
+          "CategoryName": "Выращивание однолетних культур",
+          "Count": 1000,
+          "Subcategories": [
+            {
+              "Number": "01.11",
+              "CategoryName": "Выращивание зерновых культур",
+              "Count": 1000,
+              "Subcategories": [
+                {
+                  "Number": "01.11.1",
+                  "CategoryName": "Выращивание пшеницы",
+                  "Count": 1000,
+                  "Subcategories": []
+                },
+                {
+                  "Number": "01.11.2",
+                  "CategoryName": "Выращивание ячменя",
+                  "Count": 1000,
+                  "Subcategories": []
+                }
+              ]
+            },
+            {
+              "Number": "01.12",
+              "CategoryName": "Выращивание зернобобовых культур",
+              "Count": 1000,
+              "Subcategories": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "Companies": {
+    "heading": ["dick", "INN", "name", "site"],
+    "body": [
+      {
+        "dick": "",
+        "INN": "123456",
+        "name": "Old dicks",
+        "site": "mstuca.ru"
+      },
+      {
+        "dick": "",
+        "INN": "123456",
+        "name": "Old dicks",
+        "site": "mstuca.ru"
+      }
+    ]
+  },
+
+  "Categories_out": [
+    {
+      "id": 1,
+      "gay": "01.2311"
+    },
+    {
+      "rad": [
+        "on",
+        "on",
+        "on"
+      ],
+      "id": 2
+    },
+    {
+      "rad": [
+        "01.0",
+        "01.0",
+        "01.1"
+      ],
+      "id": 3
+    },
+    {
+      "rad": [
+        "01.0",
+        "01.0",
+        "01.0",
+        "01.1"
+      ],
+      "id": 4
+    },
+    {
+      "rad": [
+        "01.0",
+        "01.0",
+        "01.1"
+      ],
+      "id": 5
+    },
+    {
+      "rad": [
+        "01.11",
+        "01.11.1",
+        "01.11.2"
+      ],
+      "id": 6
+    },
+    {
+      "cat_num": [
+        "01",
+        "01.1",
+        "01.11.1",
+        "01.11.2"
+      ],
+      "id": 7
+    },
+    {
+      "id": 8
+    }
+  ]
+}
